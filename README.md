@@ -83,3 +83,100 @@ Page 1: Claim Intake (Mobile Number + Claim ID)
 Page 2: Multi-Agent Investigation (Step-by-Step)
         ↓
 Page 3: Final Fraud Decision + Explanation
+
+Each agent runs sequentially with visible outputs and realistic processing time to simulate real-world investigation workflows.
+
+---
+
+## 🛠️ Technology Stack
+
+- Frontend / UI: Streamlit  
+- Backend Logic: Python  
+- Agent Orchestration: Custom rule-based workflow  
+- Architecture Style: Agentic AI (Explainable & Modular)  
+
+> ⚠️ This is a prototype designed for transparency and reasoning, not a production ML deployment.
+
+---
+
+## 📂 Project Structure
+claimwatch-x/ │ ├── app.py          # Streamlit UI & agent workflow ├── engine.py       # Core logic & agent implementations ├── run.bat         # Quick run script (Windows) ├── requirements.txt └── README.md
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install dependencies
+pip install -r requirements.txt
+### 2️⃣ Run the application
+streamlit run app.py
+### 3️⃣ Open in browser
+http://localhost:8501/
+---
+
+## 🧪 Sample Test Data
+
+### High-Risk (Fraud-Likely) Case
+Mobile Number: 9876543210 Claim ID: CLM-2024-1001
+Triggers:
+- Very high claim-to-premium ratio  
+- Early policy claim  
+- High fraud probability  
+- Escalation to manual investigation  
+
+---
+
+### Low-Risk (Valid) Case
+Mobile Number: 9000011111 Claim ID: CLM-2022-3007
+Triggers:
+- Low claim-to-premium ratio  
+- Long policy tenure  
+- Low fraud probability  
+- Claim approval  
+
+---
+
+## 💡 Why ClaimWatch-X Stands Out
+
+- ❌ Not a chatbot  
+- ❌ Not a black-box model  
+- ✅ A decision-oriented system  
+- ✅ Transparent and explainable  
+- ✅ Mirrors enterprise insurance workflows  
+- ✅ Demonstrates real Agentic AI reasoning  
+
+---
+
+## 📌 Limitations & Future Scope
+
+- Replace rule-based scoring with trained ML models  
+- Add SHAP-based feature explanations  
+- Integrate secure databases or blockchain audit logs  
+- Extend to real insurer datasets  
+- Add investigator / auditor role views  
+
+---
+
+## 🎓 Ideal Use Cases
+
+- Hackathons (Agentic AI / GenAI / AIML tracks)  
+- Academic demonstrations  
+- Final-year projects  
+- Recruiter portfolios  
+- AI explainability showcases  
+
+---
+
+## 📜 License
+
+This project is released for **educational and demonstration purposes only**.
+
+---
+
+## ⭐ Status
+
+✅ Code stable  
+✅ Demo-ready  
+✅ Judge-friendly  
+✅ Recruiter-safe  
+
+If you find this project valuable, consider starring ⭐ the repository.
